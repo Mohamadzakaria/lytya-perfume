@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lytya Perfume | Girlhood in a bottle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="animate__animated animate__fadeInDown">
+        <div class="logo">LYTYA</div>
+        <nav id="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#shop" class="nav-link">Shop All</a>
+            <a href="#story" class="nav-link">Our Story</a>
+            <a href="#policy" class="nav-link">Shipping & Policy</a>
+        </nav>
+        <div class="header-right">
+            <a href="https://instagram.com/lytya_perfume" target="_blank" class="instagram-top-link"><i class="fab fa-instagram"></i></a>
+            <div class="cart-icon"><i class="fas fa-shopping-bag"></i> Cart (0)</div>
+            <div class="menu-toggle" id="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInUp">Girlhood in a bottle ✨</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Scents that evoke memories, crafted for your finest moments.</p>
+            <a href="#shop" class="shop-btn animate__animated animate__fadeInUp animate__delay-2s" style="text-decoration:none;">Explore Collection</a>
+        </div>
+    </section>
+
+    <section id="shop" class="products-section">
+        <h2 class="section-title">The Collection</h2>
+        <p class="section-subtitle">Find your signature scent from our curated essentials</p>
+        <div class="products-grid" id="products-container"></div>
+    </section>
+
+    <section id="story" class="story-section">
+        <div class="story-container">
+            <div class="story-text">
+                <h2>Our Story</h2>
+                <h3>"Girlhood in a bottle"</h3>
+                <p>Lytya was born from a desire to capture the essence of fleeting moments, laughter, and the gentle warmth of youth. Every blend we create is a liquid memory—delicate yet profound—designed to accompany you on your unique journey. We don't just create perfumes; we bottle feelings.</p>
+                <a href="https://instagram.com/lytya_perfume" target="_blank" class="instagram-btn"><i class="fab fa-instagram"></i> Follow our journey on Instagram</a>
+            </div>
+            <div class="story-image">
+                <img src="images/our-story.jpeg" alt="Lytya Perfume Story">
+            </div>
+        </div>
+    </section>
+
+    <section id="policy" class="policy-section">
+        <h2 class="section-title">Shipping & Returns</h2>
+        <div class="policy-grid">
+            <div class="policy-card">
+                <i class="fas fa-truck"></i>
+                <h3>Fast Delivery</h3>
+                <p>We deliver all across Lebanon. Your order will reach your doorstep within 2-4 business days.</p>
+            </div>
+            <div class="policy-card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Cash on Delivery</h3>
+                <p>No credit card required. Pay safely in cash (USD or LBP market rate) upon receiving your bottle.</p>
+            </div>
+            <div class="policy-card">
+                <i class="fas fa-undo-alt"></i>
+                <h3>Our Return Policy</h3>
+                <p>To ensure your satisfaction, every order comes with a free 2ml sample. Try the sample first! If you don't love it, return the unopened full bottle for a 100% refund.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-showcase">
+        <h2>Follow @lytya_perfume</h2>
+        <p>Join our aesthetic community on Instagram for daily inspirations</p>
+        <div class="instagram-grid">
+            <a href="https://instagram.com/lytya_perfume" target="_blank" class="ig-post"><img src="images/ig-1.jpeg" alt="Instagram Post 1"></a>
+            <a href="https://instagram.com/lytya_perfume" target="_blank" class="ig-post"><img src="images/ig-2.jpeg" alt="Instagram Post 2"></a>
+            <a href="https://instagram.com/lytya_perfume" target="_blank" class="ig-post"><img src="images/ig-3.jpeg" alt="Instagram Post 3"></a>
+        </div>
+    </section>
+
+    <div id="side-cart" class="side-cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart-btn" class="close-cart-btn">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your cart is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="checkout-header">
+            <h2>Complete Your Order</h2>
+            <button id="close-checkout-btn" class="close-checkout-btn">&times;</button>
+        </div>
+        <form id="checkout-form" class="checkout-form">
+            <div class="form-group">
+                <label for="customer-name">Full Name</label>
+                <input type="text" id="customer-name" placeholder="E.g., Yasmina Malek" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-phone">Phone Number</label>
+                <input type="tel" id="customer-phone" placeholder="E.g., +961 70 123 456" required>
+            </div>
+            <div class="form-group">
+                <label for="customer-address">Delivery Address</label>
+                <textarea id="customer-address" placeholder="City, Street, Building, Floor..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Payment Method</label>
+                <div class="payment-methods">
+                    <label class="radio-label">
+                        <input type="radio" name="payment" value="COD" checked>
+                        <span>Cash on Delivery (COD)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="order-summary-box">
+                <p>Your Total: <strong id="checkout-total-display">$0.00</strong></p>
+            </div>
+            <button type="submit" class="place-order-btn">Confirm Order</button>
+        </form>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>LYTYA</h3>
+                <p>"Girlhood in a bottle" ✨</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#home">Home</a>
+                <a href="#shop">Shop All</a>
+                <a href="#story">Our Story</a>
+                <a href="#policy">Shipping & Returns</a>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <a href="https://instagram.com/lytya_perfume" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lytya Perfume. Designed with love.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
