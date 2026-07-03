@@ -19,6 +19,35 @@ const PERFUMES_DATA = [
         sizes: [
             { size: "60ml", price: 18.00 }
         ]
+    },
+    {
+        id: 3,
+        title: "Lytya Body Oil",
+        notes: "Glow • Nourish • Soften ✨ A luxury perfumed body oil for ultimate softness and deep hydration.",
+        img: "images/body-oil.jpeg",
+        sizes: [
+            { size: "60ml", price: 15.00 },
+            { size: "100ml", price: 18.00 }
+        ]
+    },
+    {
+        id: 4,
+        title: "Lytya Loofah Soap",
+        notes: "Natural Exfoliation • Radiant Skin 🌸 Gently exfoliates and deeply cleanses your skin.",
+        img: "images/loofah-soap.jpeg",
+        sizes: [
+            { size: "Standard", price: 8.00 }
+        ]
+    },
+    {
+        id: 5,
+        title: "Lytya Body Splash",
+        notes: "Fresh • Floral • Invigorating ⚡ A refreshing body mist with a captivating floral scent.",
+        img: "images/body-splash.jpeg",
+        sizes: [
+            { size: "60ml", price: 15.00 },
+            { size: "100ml", price: 18.00 }
+        ]
     }
 ];
 
